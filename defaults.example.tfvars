@@ -1,15 +1,15 @@
-project = "tmc"
+project = "PROJECT"
 
 do_region              = "fra1"
 cluster_version_prefix = "1.21."
 default_node_size      = "s-2vcpu-4gb"
 
-flux_config_repo = "https://github.com/TobiMichael96/kube-config"
-flux_git_branch  = "cloud"
+flux_config_repo = "FLUX_CONFIG_REPO"
+flux_git_branch  = "FLUX_CONFIG_BRANCH"
 
-domains = ["tme-cloud.de", "tobiasmichael.de", "tmem.de"]
+domains = ["example.de", "test.de"]
 
 tags = [
-  "owner:tobias-effner",
+  "owner:YOUR_NAME",
   "createdby:terraform"
 ]

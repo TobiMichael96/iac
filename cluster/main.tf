@@ -10,7 +10,7 @@ locals {
   module_version = "1"
   module_name    = "cluster"
 
-  tags = module.tags.tags
+  tags = module.tags.tags_list
 }
 
 module "tags" {

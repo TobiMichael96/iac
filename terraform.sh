@@ -5,7 +5,7 @@ if [[ "$1" == "plan" ]]; then
 elif [[ "$1" == "destroy" ]]; then
     terraform destroy -var-file=defaults.tfvars -var-file=secrets.tfvars
 else
-  if [[ "$1" == "fast" ]]; then
+  if [[ "$1" == "auto" ]]; then
     terraform apply -var-file=defaults.tfvars -var-file=secrets.tfvars --auto-approve
   else
     terraform apply -var-file=defaults.tfvars -var-file=secrets.tfvars
