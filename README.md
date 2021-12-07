@@ -24,7 +24,7 @@ No requirements.
 | <a name="module_external_dns"></a> [external\_dns](#module\_external\_dns) | ./external_dns | n/a |
 | <a name="module_flux"></a> [flux](#module\_flux) | ./flux | n/a |
 | <a name="module_ingress_nginx"></a> [ingress\_nginx](#module\_ingress\_nginx) | ./ingress_nginx | n/a |
-| <a name="module_s3"></a> [s3](#module\_s3) | ./s3 | n/a |
+| <a name="module_s3_data"></a> [s3\_data](#module\_s3\_data) | ./s3 | n/a |
 
 ## Resources
 

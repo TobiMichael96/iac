@@ -118,11 +118,11 @@ module "external_dns" {
   depends_on = [module.cluster]
 }
 
-module "s3" {
+module "s3_data" {
   source = "./s3"
 
   project = var.project
   region  = var.aws_region
 
-  usage = "nextcloud"
+  usage = "data"
 }
