@@ -20,8 +20,23 @@ resource "aws_iam_user_policy" "default" {
     Version = "2012-10-17",
     Statement = [
       {
+        Sid = "ConsoleAccess",
+        Effect = "Allow",
         Action = [
-          "s3:*"
+          "s3:GetAccountPublicAccessBlock",
+          "s3:GetBucketAcl",
+          "s3:GetBucketLocation",
+          "s3:GetBucketPolicyStatus",
+          "s3:GetBucketPublicAccessBlock",
+          "s3:ListAllMyBuckets"
+        ],
+        Resource = "*"
+      },
+      {
+        Action = [
+          "s3:ListBucket",
+          "s3:*ObjectAcl",
+          "s3:*Object"
         ],
         Effect = "Allow",
         Resource = [
