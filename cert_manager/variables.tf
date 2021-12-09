@@ -17,7 +17,6 @@ variable "namespace" {
 variable "nameservers" {
   description = "List of nameservers."
   default = [
-    "173.245.58.51",
     "1.1.1.1",
     "8.8.8.8"
   ]
